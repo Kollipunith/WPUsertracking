@@ -63,7 +63,7 @@ function uta_activate_plugin() {
         last_active DATETIME NOT NULL,
         pages_viewed LONGTEXT NOT NULL,
         utm_source VARCHAR(255) DEFAULT '',
-        referrer TEXT DEFAULT 'Direct',
+        referrer VARCHAR(255) NOT NULL DEFAULT 'Direct',
         form_submissions INT DEFAULT 0,
         PRIMARY KEY (id),
         KEY user_id_index (user_id)
